@@ -13,9 +13,7 @@ spark = SparkSession.builder \
 sqlEngine = 'jdbc'
 sqlServer = 'sqlserver'
 sqlUser = 'sa'
-# Get the password using getpass before making the last push in the git repo, until then hardcode the password
-sqlPassword = '2282KB2w7^y&u&98UrYA'
-# sqlPassword = getpass.getpass("Enter your SQL server password: ")
+sqlPassword = getpass.getpass("Enter your SQL server password: ")
 sqlHost = 'localhost'
 sqlPort = '1433'
 sqlDB_name = 'LogCDCDatabase'
